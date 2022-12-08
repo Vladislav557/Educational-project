@@ -1,12 +1,25 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
+
+import { ReactComponent as MoonIcon } from 'assets/icon-moon.svg';
+import { ReactComponent as SunIcon } from 'assets/icon-sun.svg';
 import styles from './ThemeSwitcher.module.scss';
 
-interface ThemeSwitcherProps {}
+const ThemeSwitcher: FC = () => {
+  const [isDark, setDark] = useState(false);
 
-const ThemeSwitcher: FC<ThemeSwitcherProps> = () => (
-  <div className={styles.ThemeSwitcher}>
-    ThemeSwitcher Component
-  </div>
-);
+  const themeText = isDark ? 'Light' : 'Dark';
+  const ThemeIcon = isDark ? SunIcon : MoonIcon;
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', isDark ? 'dark' : 'light')
+  }, [isDark])
+
+  return (
+    <div className={styles.ThemeSwitcher} onClick={() => setDark(!isDark)}>
+      <span>{themeText}</span>
+      <ThemeIcon className={styles.icon} />
+    </div>
+  )
+};
 
 export default ThemeSwitcher;

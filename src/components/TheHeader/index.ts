@@ -1,1 +1,2 @@
-export * from './TheHeader';
+import TheHeader from './TheHeader';
+export default TheHeader;

@@ -1,1 +1,2 @@
-export * from './ThemeSwitcher';
+import ThemeSwticher from './ThemeSwitcher';
+export default ThemeSwticher;
