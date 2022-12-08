@@ -13,3 +13,24 @@ export type GithubUser = {
     following: number;
     create_at: string;
 }
+
+export type GithubError = {
+    message: string;
+    documentaion_url: string;
+}
+
+export type LocalGithubUser = {
+    login: string;
+    id: number;
+    avatar: string;
+    name: string;
+    company: string;
+    block: string;
+    location: string;
+    bio: string;
+    twitte: string;
+    repos: number;
+    followers: number;
+    following: number;
+    create: string;
+}
