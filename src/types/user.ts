@@ -25,12 +25,12 @@ export type LocalGithubUser = {
     avatar: string;
     name: string;
     company: string;
-    block: string;
+    blog: string;
     location: string;
     bio: string;
-    twitte: string;
+    twitter: string;
     repos: number;
     followers: number;
     following: number;
-    create: string;
+    created: string;
 }
