@@ -4,14 +4,14 @@ export type GithubUser = {
     avatar_url: string;
     name: string;
     company: string;
-    block: string;
+    blog: string;
     location: string;
     bio: string;
     twitter_username: string;
     public_repos: number;
     followers: number;
     following: number;
-    create_at: string;
+    created_at: string;
 }
 
 export type GithubError = {
