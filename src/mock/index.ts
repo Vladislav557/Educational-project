@@ -2,7 +2,6 @@ import { LocalGithubUser } from "types"
 
 export const defaultUser: LocalGithubUser = {
     "login": "Vladislav557",
-    "id": 32070425,
     "avatar": "https://avatars.githubusercontent.com/u/32070425?v=4",
     "name": "Vladislav Kiselev",
     "company": "Russia",
